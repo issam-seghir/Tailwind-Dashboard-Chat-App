@@ -1,0 +1,20 @@
+@layer components {
+	h1 {
+		@apply px-4 py-3  text-3xl capitalize text-secondary-light-300;
+		/* font-size:  rfs( 1.875rem); */
+	}
+	h2 {
+		@apply px-4 py-3  text-2xl capitalize text-secondary-light-100;
+	}
+	h3 {
+		@apply px-4 py-3 text-xl capitalize text-secondary-light-100;
+	}
+	h4 {
+		@apply p-4 py-3 text-lg capitalize text-secondary-light-100;
+	}
+	p{
+		@apply  p-1  font-medium text-secondary-light-200 md:text-base;
+
+	}
+
+}

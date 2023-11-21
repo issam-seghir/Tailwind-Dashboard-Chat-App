@@ -1,0 +1,163 @@
+@layer base {
+	@font-face {
+		src: url("../../assets/fonts/Nunito-VariableFont.ttf") format("ttf"), url("../../assets/fonts/Nunito-VariableFont.ttf") format("ttf-variations"), url("../../assets/fonts/Nunito-Italic-VariableFont.ttf") format("ttf"),
+			url("../../assets/fonts/Nunito-Italic-VariableFont.ttf") format("ttf-variations");
+
+		/* from 100 to 1000 */
+		font-weight: 100 1000;
+		font-stretch: 100%;
+	}
+	html {
+		font-family: "Nunito", theme(fontFamily.mono), theme(fontFamily.sans), theme(fontFamily.serif);
+	}
+}
+
+@layer components {
+	/* variable font */
+	::selection {
+		background-color: theme(colors.secondary.dark.200);
+		color: theme(colors.secondary.light.400);
+	}
+
+	/* scroll bar style */
+	/* For Firefox */
+	:root {
+		overflow-y: scroll;
+		scrollbar-color: theme(colors.secondary.light.400) theme(colors.primary);
+		scrollbar-width: thin;
+		scrollbar-gutter: stable both-edges;
+	}
+
+	/* For Chrome and other browsers except Firefox */
+	::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(243, 240, 76, 0.3);
+		border-radius: 10px;
+		background-color: theme(colors.secondary.dark.100);
+	}
+
+	::-webkit-scrollbar {
+		width: 12px;
+		background-color: theme(colors.secondary.dark.100);
+	}
+
+	::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		-webkit-box-shadow: inset 0 0 6px rgba(243, 240, 76, 0.3);
+		background-color: theme(colors.primary);
+	}
+	.btn-primary-icon {
+		@apply mb-2
+		flex
+		items-center
+		gap-1
+		px-[1em]
+		py-2
+		transition-all
+		duration-100
+	}
+	.btn-primary-icon.active {
+		@apply bg-secondary-dark-300;
+	}
+	.btn-primary-icon.active span {
+		@apply dark:text-secondary-light-300;
+	}
+	.btn-primary-icon.active .icon {
+		@apply fill-secondary-light-400 !important;
+	}
+	.btn-secendary {
+		@apply my-3 bg-secondary-light-400 px-[0.5em] py-1 text-sm font-semibold capitalize text-secondary-dark-100 transition-all duration-500 hover:shadow-md hover:shadow-secondary-light-400
+		md:my-5 md:px-[1em] md:text-base;
+	}
+
+	.btn-toggle {
+		@apply relative mx-auto block h-9 w-[4.40rem] cursor-pointer rounded-[200px] bg-secondary-light-300  transition-all duration-500 after:absolute after:left-[5.6px] after:top-[4.5px] after:h-[calc(100%_-_9px)] after:w-[calc(100%_-_40px)] after:rounded-[180px] after:bg-secondary-dark-300 after:shadow-[0px_5px_10px_rgba(0,0,0,0.2)] after:transition-all after:duration-500 after:content-[''] active:after:w-[60%] peer-checked:bg-secondary-dark-200 peer-checked:after:left-[48%] peer-checked:after:bg-secondary-light-400 peer-checked:after:active:ml-[-13px];
+	}
+	input:checked + .btn-toggle .icon.sun {
+		fill: #7e7e7e;
+	}
+	input:checked + .btn-toggle .icon.moon {
+		@apply fill-secondary-dark-300;
+	}
+}
+
+@layer components {
+	.progressbar-label {
+		color: #f00 !important;
+		position: absolute !important;
+		right: 0 !important;
+		left: initial !important;
+		top: initial !important;
+		bottom: 0 !important;
+		background-color: aquamarine !important;
+		border-radius: 20% !important;
+		padding-inline: 0.3em !important;
+		padding-block: 0.2em !important;
+		margin: 0 !important;
+		transform: translate(-50%, -50%) !important;
+	}
+	.sidebar.collapsed {
+		display: none;
+	}
+	.avatar {
+		@apply w-16  rounded-full border-4 border-secondary-light-400 p-1 md:w-28;
+	}
+	.tooltip {
+		@apply invisible absolute bottom-[90%] left-0 rounded bg-secondary-dark-300 p-1 font-medium capitalize text-secondary-light-300 transition-all duration-500
+		group-hover:visible;
+	}
+	.input {
+		@apply w-full rounded-sm bg-secondary-dark-200 p-2 pl-6  capitalize text-secondary-light-100 outline-none  transition-all   duration-500 focus-within:bg-secondary-dark-100 dark:bg-secondary-dark-300 dark:text-secondary-light-100 dark:focus-within:bg-primary;
+	}
+
+	.custom-shape-divider-top {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		transform: rotate(180deg);
+	}
+	.custom-shape-divider-bottom {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+	}
+
+	.custom-shape-divider-bottom svg {
+		width: calc(100% + 1.3px);
+		height: 166px;
+	}
+
+	.custom-shape-divider-top svg {
+		width: calc(141% + 1.3px);
+		height: 133px;
+	}
+
+	.card {
+		@apply mx-4 	my-3 rounded-md bg-secondary-dark-300 p-5 overflow-y-auto overscroll-y-auto;
+	}
+	.glass {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	background: #d3d5ee;
+	}
+	.main{
+		background: #f3f3fd;
+	}
+	.test {
+		/* transform: rotate(30deg) ; */
+		display: grid;
+		grid-template-columns: repeat(2, 250px);
+		grid-template-rows: repeat(2, 250px);
+		justify-content: center;
+	}
+
+	/* .test h2,
+.test p,
+.test svg {
+  transform: rotate(-30deg);
+} */
+}

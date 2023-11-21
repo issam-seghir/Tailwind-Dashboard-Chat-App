@@ -1,0 +1,28 @@
+<svg width="24" height="240" viewBox="0 0 24 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 13">
+<g id="Frame 9">
+<rect width="24" height="24" rx="12" fill="#FFF37A"/>
+<path id="Ellipse 9" d="M12 20.5C16.6944 20.5 20.5 16.6944 20.5 12C20.5 7.30558 16.6944 3.5 12 3.5C7.30558 3.5 3.5 7.30558 3.5 12C3.5 16.6944 7.30558 20.5 12 20.5Z" fill="#FFF37A" stroke="#363538" stroke-width="3" stroke-miterlimit="6.78131" stroke-linecap="round"/>
+</g>
+<path id="Line 1" d="M12 24L12 54" stroke="#FFF37A" stroke-width="2" stroke-linecap="round"/>
+<g id="Frame 10">
+<rect y="54" width="24" height="24" rx="12" fill="#FFF37A"/>
+<path id="Ellipse 9_2" d="M12 74.5C16.6944 74.5 20.5 70.6944 20.5 66C20.5 61.3056 16.6944 57.5 12 57.5C7.30558 57.5 3.5 61.3056 3.5 66C3.5 70.6944 7.30558 74.5 12 74.5Z" fill="#FFF37A" stroke="#363538" stroke-width="3" stroke-miterlimit="6.78131" stroke-linecap="round"/>
+</g>
+<path id="Line 2" d="M12 78L12 108" stroke="#FFF37A" stroke-width="2" stroke-linecap="round"/>
+<g id="Frame 11">
+<rect y="108" width="24" height="24" rx="12" fill="#FFF37A"/>
+<path id="Ellipse 9_3" d="M12 128.5C16.6944 128.5 20.5 124.694 20.5 120C20.5 115.306 16.6944 111.5 12 111.5C7.30558 111.5 3.5 115.306 3.5 120C3.5 124.694 7.30558 128.5 12 128.5Z" fill="#FFF37A" stroke="#363538" stroke-width="3" stroke-miterlimit="6.78131" stroke-linecap="round"/>
+</g>
+<path id="Line 3" d="M12 132L12 162" stroke="#FFF37A" stroke-width="2" stroke-linecap="round"/>
+<g id="Frame 13_2">
+<rect y="162" width="24" height="24" rx="12" fill="#FFF37A"/>
+<path id="Ellipse 9_4" d="M12 182.5C16.6944 182.5 20.5 178.694 20.5 174C20.5 169.306 16.6944 165.5 12 165.5C7.30558 165.5 3.5 169.306 3.5 174C3.5 178.694 7.30558 182.5 12 182.5Z" fill="#363538" stroke="#363538" stroke-width="3" stroke-miterlimit="6.78131" stroke-linecap="round"/>
+</g>
+<path id="Line 4" d="M12 186L12 216" stroke="#FFF37A" stroke-width="2" stroke-linecap="round"/>
+<g id="Frame 12">
+<rect y="216" width="24" height="24" rx="12" fill="#FFF37A"/>
+<path id="Ellipse 9_5" d="M12 236.5C16.6944 236.5 20.5 232.694 20.5 228C20.5 223.306 16.6944 219.5 12 219.5C7.30558 219.5 3.5 223.306 3.5 228C3.5 232.694 7.30558 236.5 12 236.5Z" fill="#363538" stroke="#363538" stroke-width="3" stroke-miterlimit="6.78131" stroke-linecap="round"/>
+</g>
+</g>
+</svg>
