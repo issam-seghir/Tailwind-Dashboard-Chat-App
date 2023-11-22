@@ -1,8 +1,7 @@
-// import Icons from "unplugin-icons/vite";
 import { defineConfig } from "vite";
 
 export default defineConfig(({ command, mode, ssrBuild }) => ({
-	// base: "/Captions-AI/",
+	// base: "/repo-name/",
 	// Getting rid of hashes in generated filenames
 	filenameHashing: false,
 	build: {
@@ -16,13 +15,5 @@ export default defineConfig(({ command, mode, ssrBuild }) => ({
 			},
 		},
 	},
-
-	/* 	resolve: {
-		alias: {
-			// "~gerillass": path.resolve(__dirname, "node_modules/gerillass/scss/gerillass.scss"),
-			// "@" -> "/User/project-root/src/views"
-    		//   '@': path.join(__dirname, 'src/views'),
-		},
-	}, */
 	plugins: [],
 }));

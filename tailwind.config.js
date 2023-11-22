@@ -60,6 +60,7 @@ export default {
 				"vertical-space": "10rem",
 				"main-border-radius": "clamp(5px, 2vw, 7px)",
 			},
+		
 		},
 	},
 	plugins: [],
