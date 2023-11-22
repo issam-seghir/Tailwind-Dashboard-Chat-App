@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -8,10 +8,10 @@
 		<title>Vite App</title>
 	</head>
 	<body class="relative flex min-h-screen bg-primary dark:bg-secondary-light-300">
-		<nav class="sidebar glass  basis-1/6  sticky top-0 h-screen self-start border-r-2  transition-all md:p-4">
-			<div class="mx-auto my-12 flex w-20 flex-col items-center md:my-10 md:w-32">
+		<nav class="sidebar glass basis-1/6 sticky top-0 h-screen self-start border-r-2 transition-all md:p-4">
+			<div class="mx-auto gap-2 my-12 flex w-20 flex-col items-center md:my-10 md:w-32">
 				<img class="avatar shadow-lg" src="../../assets/images/profile-pic-1.png" alt="avatar image" />
-				<div class="flex items-center w-max">
+				<div class="w-max flex items-center">
 					<p class="mt-2 text-center text-secondary-light-300 dark:text-secondary-dark-300">Issam Seghir</p>
 					<svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(90)">
 						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -20,64 +20,73 @@
 					</svg>
 				</div>
 			</div>
-			<div class="flex flex-col gap-6">
-				<button class="md:btn-primary-icon active group relative [&&]:gap-8">
-					<svg class="icon mb-5 md:mb-0">
-						<use href="../../assets/icons/spirit.svg#dashboard" />
+			<div class="gap-6 flex flex-col">
+				<button class="md:btn-primary-icon hover:border-l-4 group border-0 hover:border-blue-600 relative [&&]:gap-8">
+					<svg class="icon mb-5 md:mb-0 group-hover:fill-secondary-light-100">
+						<use href="../../assets/icons/spirit.svg#home" />
 					</svg>
-					<span class="hidden font-medium  text-secondary-light-300 dark:text-secondary-dark-100 dark:group-hover:text-secondary-light-300 md:block uppercase">properties</span>
-					<span class="tooltip md:hidden">properties</span>
+					<span class="hidden group-hover:text-secondary-light-100 font-medium text-secondary-light-300 md:block uppercase">properties</span>
+					<span class="tooltip group-hover:text-secondary-light-100 md:hidden">properties</span>
 				</button>
-				<button class="md:btn-primary-icon  hover:border-l-4  group border-0  hover:border-blue-600 relative [&&]:gap-8">
-					<svg class="icon mb-5 md:mb-0  group-hover:fill-secondary-light-100">
-						<use href="../../assets/icons/spirit.svg#profile" />
+				<button class="md:btn-primary-icon hover:border-l-4 group border-0 hover:border-blue-600 relative [&&]:gap-8">
+					<svg transform="matrix(-1, 0, 0, 1, 0, 0)" class="icon mb-5 md:mb-0 group-hover:stroke-secondary-light-100">
+						<use href="../../assets/icons/spirit.svg#chat" />
 					</svg>
-					<span class="hidden group-hover:text-secondary-light-100 font-medium capitalize text-secondary-light-300  md:block">profile</span>
-					<span class="tooltip group-hover:text-secondary-light-100 md:hidden">profile</span>
+					<span class="hidden group-hover:text-secondary-light-100 font-medium text-secondary-light-300 md:block uppercase">chat</span>
+					<span class="tooltip group-hover:text-secondary-light-100 md:hidden">chat</span>
 				</button>
-				<button class="md:btn-primary-icon group relative [&&]:gap-8">
-					<svg class="icon mb-5 md:mb-0">
-						<use href="../../assets/icons/spirit.svg#project" />
+				<button class="md:btn-primary-icon hover:border-l-4 group border-0 hover:border-blue-600 relative [&&]:gap-8">
+					<svg class="icon mb-5 md:mb-0 group-hover:stroke-secondary-light-100">
+						<use href="../../assets/icons/spirit.svg#calendar" />
 					</svg>
-					<span class="hidden font-medium capitalize text-secondary-light-300 dark:text-secondary-dark-100 dark:group-hover:text-secondary-light-300 md:block">projects</span>
-					<span class="tooltip md:hidden">projects</span>
+					<span class="hidden group-hover:text-secondary-light-100 font-medium text-secondary-light-300 md:block uppercase">calendar</span>
+					<span class="tooltip group-hover:text-secondary-light-100 md:hidden">calendar</span>
 				</button>
-				<button class="md:btn-primary-icon group relative [&&]:gap-8">
-					<svg class="icon mb-5 md:mb-0">
+				<button class="md:btn-primary-icon hover:border-l-4 group border-0 hover:border-blue-600 relative [&&]:gap-8">
+					<svg class="icon mb-5 md:mb-0 group-hover:stroke-secondary-light-100">
 						<use href="../../assets/icons/spirit.svg#file" />
 					</svg>
-					<span class="hidden font-medium capitalize text-secondary-light-300 dark:text-secondary-dark-100 dark:group-hover:text-secondary-light-300 md:block">fils</span>
-					<span class="tooltip md:hidden">fils</span>
+					<span class="hidden group-hover:text-secondary-light-100 font-medium text-secondary-light-300 md:block uppercase">documents</span>
+					<span class="tooltip group-hover:text-secondary-light-100 md:hidden">documents</span>
 				</button>
-				<button class="md:btn-primary-icon group relative [&&]:gap-8">
-					<svg class="icon mb-5 md:mb-0">
-						<use href="../../assets/icons/spirit.svg#friends" />
+				<button class="md:btn-primary-icon hover:border-l-4 group border-0 hover:border-blue-600 relative [&&]:gap-8">
+					<svg class="icon mb-5 md:mb-0 group-hover:stroke-secondary-light-100">
+						<use href="../../assets/icons/spirit.svg#tag" />
 					</svg>
-					<span class="hidden font-medium capitalize text-secondary-light-300 dark:text-secondary-dark-100 dark:group-hover:text-secondary-light-300 md:block">friends</span>
-					<span class="tooltip md:hidden">friends</span>
+					<span class="hidden group-hover:text-secondary-light-100 font-medium text-secondary-light-300 md:block uppercase">offers</span>
+					<span class="tooltip group-hover:text-secondary-light-100 md:hidden">offers</span>
 				</button>
-				<button class="md:btn-primary-icon group relative [&&]:gap-8">
-					<svg class="icon mb-5 md:mb-0">
-						<use href="../../assets/icons/spirit.svg#plan" />
-					</svg>
-					<span class="hidden font-medium capitalize text-secondary-light-300 dark:text-secondary-dark-100 dark:group-hover:text-secondary-light-300 md:block">plans</span>
-					<span class="tooltip md:hidden">plans</span>
-				</button>
-				<button class="md:btn-primary-icon group relative [&&]:gap-8">
-					<svg class="icon mb-5 md:mb-0">
+				<button class="md:btn-primary-icon hover:border-l-4 group border-0 hover:border-blue-600 relative [&&]:gap-8">
+					<svg class="icon mb-5 md:mb-0 group-hover:stroke-secondary-light-100">
 						<use href="../../assets/icons/spirit.svg#setting" />
 					</svg>
-					<span class="hidden font-medium capitalize text-secondary-light-300 dark:text-secondary-dark-100 dark:group-hover:text-secondary-light-300 md:block">setting</span>
-					<span class="tooltip md:hidden">setting</span>
+					<span class="hidden group-hover:text-secondary-light-100 font-medium text-secondary-light-300 md:block uppercase">settings</span>
+					<span class="tooltip group-hover:text-secondary-light-100 md:hidden">settings</span>
 				</button>
 			</div>
 		</nav>
-		<main class="main flex-1 px-11 py-4">
+		<main class=" flex-1 px-11 py-4">
 			<header class="flex items-center justify-end p-4 pr-8">
 				<button class="sidebar-toggle m-1 block self-center rounded-md bg-secondary-light-400 p-1 md:hidden">⇆</button>
 				<div class="left-head flex items-center justify-center">
-					<button class="btn-secendary group mr-6 rounded-2xl py-2 font-bold uppercase">upgrade</button>
-					<button class="btn-primary-icon group m-0 border-2 border-secondary-light-300">
+					<div class="relative inline-block text-left">
+						<div>
+							<button type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 bg-inherit px-4 py-2 text-sm font-medium text-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+								Status
+								<svg xmlns="http://www.w3.org/2000/svg" class="-mr-1 ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+									<path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+								</svg>
+							</button>
+						</div>
+
+						<div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+							<div class="py-1" role="none">
+								<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Online</a>
+								<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Busy</a>
+							</div>
+						</div>
+					</div>
+					<button class="btn-primary-icon group m-0">
 						<svg class="icon h-6 w-6 group-hover:fill-secondary-light-400">
 							<use href="../../assets/icons/spirit.svg#notification" />
 						</svg>
@@ -85,8 +94,8 @@
 				</div>
 			</header>
 			<h1 class="text-9xl my-4">Chat</h1>
-			<div class="flex gap-4">
-				<section class="basis-1/3 flex flex-col bg-inherit overflow-y-scroll">
+			<div class="flex gap-4 md:flex-nowrap flex-wrap">
+				<section class="basis-1/3 px-4 flex flex-col bg-inherit">
 					<form>
 						<label for="search" class="sr-only">Search</label>
 						<div class="relative border-b-2 mb-8 py-6">
@@ -97,78 +106,78 @@
 						</div>
 					</form>
 
-					<ul class="mt-6">
-						<li class="py-5 border-b px-3 transition hover:bg-indigo-100">
+					<ul class="mt-6 flex flex-col gap-6 overflow-y-scroll">
+						<li class="py-5 shadow-md rounded border-b px-3 transition hover:bg-indigo-100">
 							<a href="#" class="flex items-center">
 								<div class="flex gap-3 flex-1 items-center">
 									<div class="h-12 w-12 rounded-full overflow-hidden">
 										<img src="https://bit.ly/2KfKgdy" loading="lazy" class="h-full w-full object-cover" />
 									</div>
 									<div>
-										<h3 class="text-lg font-semibold p-0">Akhil Gautam</h3>
+										<h3 class="text-lg font-semibold p-0">Sarah Johnson</h3>
 										<div class="text-md italic text-gray-400">Hello</div>
 									</div>
 								</div>
 								<p class="text-md text-gray-400">23m ago</p>
 							</a>
 						</li>
-						<li class="py-5 border-b px-3 transition hover:bg-indigo-100">
+						<li class="py-5 shadow-md rounded border-b px-3 transition hover:bg-indigo-100">
+							<a href="#" class="flex items-center">
+								<div class="flex gap-3 flex-1 items-center">
+									<div class="h-12 w-12 rounded-full overflow-hidden">
+										<img src="https://cdn140.picsart.com/52696599642627236248.webp?type=webp" loading="lazy" class="h-full w-full object-cover" />
+									</div>
+									<div>
+										<h3 class="text-lg font-semibold p-0">John Smith</h3>
+										<div class="text-md italic text-gray-400">Hello</div>
+									</div>
+								</div>
+								<p class="text-md text-gray-400">23m ago</p>
+							</a>
+						</li>
+						<li class="py-5 shadow-md rounded border-b px-3 transition hover:bg-indigo-100">
 							<a href="#" class="flex items-center">
 								<div class="flex gap-3 flex-1 items-center">
 									<div class="h-12 w-12 rounded-full overflow-hidden">
 										<img src="https://bit.ly/2KfKgdy" loading="lazy" class="h-full w-full object-cover" />
 									</div>
 									<div>
-										<h3 class="text-lg font-semibold p-0">Akhil Gautam</h3>
+										<h3 class="text-lg font-semibold p-0">Emily Davis</h3>
 										<div class="text-md italic text-gray-400">Hello</div>
 									</div>
 								</div>
 								<p class="text-md text-gray-400">23m ago</p>
 							</a>
 						</li>
-						<li class="py-5 border-b px-3 transition hover:bg-indigo-100">
+						<li class="py-5 shadow-md rounded border-b px-3 bg-indigo-600 text-white">
 							<a href="#" class="flex items-center">
 								<div class="flex gap-3 flex-1 items-center">
 									<div class="h-12 w-12 rounded-full overflow-hidden">
-										<img src="https://bit.ly/2KfKgdy" loading="lazy" class="h-full w-full object-cover" />
+										<img src="https://i.imgur.com/LxMX4pB.png" loading="lazy" class="h-full w-full object-cover" />
 									</div>
 									<div>
-										<h3 class="text-lg font-semibold p-0">Akhil Gautam</h3>
+										<h3 class="text-lg font-semibold p-0">Michael Rodriguez</h3>
 										<div class="text-md italic text-gray-400">Hello</div>
 									</div>
 								</div>
 								<p class="text-md text-gray-400">23m ago</p>
 							</a>
 						</li>
-						<li class="py-5 border-b px-3 bg-indigo-600 text-white">
+						<li class="py-5 shadow-md rounded border-b px-3 transition hover:bg-indigo-100">
 							<a href="#" class="flex items-center">
 								<div class="flex gap-3 flex-1 items-center">
 									<div class="h-12 w-12 rounded-full overflow-hidden">
-										<img src="https://bit.ly/2KfKgdy" loading="lazy" class="h-full w-full object-cover" />
+										<img src="https://i.imgur.com/YJdIqgY.png" loading="lazy" class="h-full w-full object-cover" />
 									</div>
 									<div>
-										<h3 class="text-lg font-semibold p-0">Akhil Gautam</h3>
+										<h3 class="text-lg font-semibold p-0">Jacob Brown</h3>
 										<div class="text-md italic text-gray-400">Hello</div>
 									</div>
 								</div>
 								<p class="text-md text-gray-400">23m ago</p>
 							</a>
 						</li>
-						<li class="py-5 border-b px-3 transition hover:bg-indigo-100">
-							<a href="#" class="flex items-center">
-								<div class="flex gap-3 flex-1 items-center">
-									<div class="h-12 w-12 rounded-full overflow-hidden">
-										<img src="https://bit.ly/2KfKgdy" loading="lazy" class="h-full w-full object-cover" />
-									</div>
-									<div>
-										<h3 class="text-lg font-semibold p-0">Akhil Gautam</h3>
-										<div class="text-md italic text-gray-400">Hello</div>
-									</div>
-								</div>
-								<p class="text-md text-gray-400">23m ago</p>
-							</a>
-						</li>
-						<li class="py-5 border-b px-3 transition hover:bg-indigo-100">
+						<li class="py-5 shadow-md rounded border-b px-3 mb-1 transition hover:bg-indigo-100">
 							<a href="#" class="flex items-center">
 								<div class="flex gap-3 flex-1 items-center">
 									<div class="h-12 w-12 rounded-full overflow-hidden">
@@ -188,56 +197,66 @@
 					<div class="flex justify-between items-center border-b-2 mb-8">
 						<div class="flex space-x-4 items-center py-4">
 							<div class="flex flex-col">
-								<h3 class="font-semibold text-lg p-0">Akhil Gautam</h3>
-								<p class="text-light text-gray-400">akhil.gautam123@gmail.com</p>
+								<h3 class="font-semibold text-lg p-0">Gold Quest</h3>
+								<p class="text-light text-gray-400">From : Michael Rodriguez</p>
 							</div>
 						</div>
 					</div>
-					<section>
-						<h1 class="font-bold text-2xl">We need UI/UX designer</h1>
-						<article class="mt-8 text-gray-500 leading-7 tracking-wider">
-							<p>Hi Akhil,</p>
-							<p>Design and develop enterprise-facing UI and consumer-facing UI as well as REST API backends.Work with Product Managers and User Experience designers to create an appealing user experience for desktop web and mobile web.</p>
-							<footer class="mt-12">
-								<p>Thanks & Regards,</p>
-								<p>Alexandar</p>
-							</footer>
-						</article>
+					<div class="flex flex-col mt-6 w-auto flex-1 w-3/4 p-4 bg-inherit overflow-y-scroll">
+						<div class="flex flex-1 flex-col space-y-4">
+							<div class="flex justify-end">
+								<div class="bg-blue-500 p-2 rounded-3xl max-w-md">
+									<p class="text-white">Hello!</p>
+								</div>
+							</div>
+
+							<div class="flex items-start">
+								<div>
+									<div class="h-12 w-12 rounded-full overflow-hidden">
+										<img src="https://i.imgur.com/YJdIqgY.png" loading="lazy" class="h-full w-full object-cover" />
+									</div>
+									<p>16:04</p>
+								</div>
+								<div class="bg-slate-200 p-2 rounded-3xl ml-2 max-w-md">
+									<p>Hi there!</p>
+								</div>
+							</div>
+						</div>
+
 						<ul class="flex space-x-4 mt-12">
-							<li class="w-10 h-10 border rounded-lg p-1 cursor-pointer transition duration-200 text-indigo-600 hover:bg-blue-100">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-								</svg>
+							<li class="border rounded-3xl shadow-sm p-1 cursor-pointer transition duration-200 text-neutral-900 hover:bg-blue-100">
+								<p>Request visit</p>
 							</li>
-							<li class="w-10 h-10 border rounded-lg p-1 cursor-pointer transition duration-200 text-blue-800 hover:bg-blue-100">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
-								</svg>
-							</li>
-							<li class="w-10 h-10 border rounded-lg p-1 cursor-pointer transition duration-200 text-pink-400 hover:bg-blue-100">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
-								</svg>
-							</li>
-							<li class="w-10 h-10 border rounded-lg p-1 cursor-pointer transition duration-200 text-yellow-500 hover:bg-blue-100">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
-								</svg>
+							<li class="border rounded-3xl shadow-sm p-1 cursor-pointer transition duration-200 text-yellow-500 hover:bg-blue-100">
+								<p>Make offer</p>
 							</li>
 						</ul>
-					</section>
-					<section class="mt-6 border rounded-xl bg-gray-50 mb-3">
-						<textarea class="w-full bg-gray-50 p-2 rounded-xl" placeholder="Type your reply here..." rows="3"></textarea>
-						<div class="flex items-center justify-between p-2">
-							<button class="h-6 w-6 text-gray-400">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+						<div class="flex relative mt-4 border rounded-md bg-gray-50 mb-3">
+							<input type="text" class="flex-grow placeholder-gray-400 border rounded-md px-6 py-6" placeholder="Enter your text here" />
+							<button class="absolute right-8 top-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-sky-500 to-sky-700 border-secondary-light-100 shadow-md shadow-secondary-light-100 p-2 text-primary">
+								<svg width="2rem" height="2rem" viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffff" stroke-width="3">
+									<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+									<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+									<g id="SVGRepo_iconCarrier">
+										<defs>
+											<style>
+												.cls-1 {
+													fill: none;
+													stroke-linecap: round;
+													stroke-linejoin: round;
+												}
+											</style>
+										</defs>
+										<path
+											class="cls-1"
+											d="M40.83,8.48c1.14,0,2,1,1.54,2.86l-5.58,26.3c-.39,1.87-1.52,2.32-3.08,1.45L20.4,29.26a.4.4,0,0,1,0-.65L35.77,14.73c.7-.62-.15-.92-1.07-.36L15.41,26.54a.46.46,0,0,1-.4.05L6.82,24C5,23.47,5,22.22,7.23,21.33L40,8.69a2.16,2.16,0,0,1,.83-.21Z"
+										></path>
+									</g>
 								</svg>
 							</button>
-							<button class="bg-purple-600 text-white px-6 py-2 rounded-xl">Reply</button>
+							<!-- <button class="absolute right-0 bg-blue-500 bg-blue-500 text-white px-3 py-1 rounded-md">Send</button> -->
 						</div>
-					</section>
+					</div>
 				</section>
 			</div>
 		</main>

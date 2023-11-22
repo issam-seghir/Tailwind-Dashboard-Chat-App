@@ -1,6 +1,6 @@
 @layer components {
 	.icon {
-		@apply inline-block h-6 w-6  md:h-8 md:w-8  fill-secondary-light-300 transition-all;
+		@apply inline-block h-6 w-6  md:h-8 md:w-8  fill-secondary-light-300 stroke-secondary-light-300 transition-all;
 	}
 
 }

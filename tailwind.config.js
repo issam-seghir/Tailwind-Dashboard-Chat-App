@@ -22,8 +22,6 @@ export default {
 			},
 			backgroundImage: {
 				// eslint-disable-next-line prettier/prettier
-				wave: "url('../../assets/images/wave.svg')",
-				"footer-texture": "url('../../assets/images/wave.svg')",
 			},
 			gridTemplateColumns: {
 				"auto-fit-450": "repeat(auto-fit,minmax(450px,1fr))",
@@ -32,7 +30,7 @@ export default {
 				"auto-fit-150": "repeat(auto-fit,minmax(150px,1fr))",
 			},
 			fontFamily: {
-				main: "Nunito",
+				main: "Rubik",
 			},
 			fontSize: {
 				// override default sizes
